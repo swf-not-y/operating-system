@@ -1,0 +1,84 @@
+#include <stdio.h>
+
+struct date
+{
+int i;//作业数量
+int reachtime;//作业抵达时间
+int starttime;//作业开始时间
+int needtime;//作业执行时间
+int finishtime;//作业完成时间
+int T;//平均周转时间
+int W;//平均周转系数
+char state;//作业运行状态
+}
+
+void menu()
+{
+	printf("1.先来先服务算法\n");
+	printf("2.短作业优先算法\n");
+	printf("3.优先比算法\n");
+	printf("4.退出程序\n");
+}
+
+void a()
+{
+	int i;
+	printf("请输入作业数：\n");
+	scanf("%d\n",&n);
+
+	for(i=0;i<n;i++)
+	{
+		a=getpch(date);//输入相应数据后建立进程列表....
+		printf("输入作业名：\n");
+		scanf("%d",&a->name);//取出a所指向的结构体中包含的数据name
+		getchar();
+		i = p->reachtime;
+		printf("作业抵达时间：%d\n",i);
+		printf("输入作业要运行的时间：");
+		scanf("%d",&a->needtime);
+		'w' = a->state;
+
+	float t1 =0;
+	float t2 =0;
+	printf("请输入第一组数据:");
+	scanf("%d %d",&t1,&t2);
+	printf("%d %d",t1,t2);
+
+}
+
+void b()
+{
+
+}
+
+void c()
+{
+
+}
+
+int main()
+{
+	int input = 0;
+	do
+	{
+		menu();
+		printf("请选择算法>:\n");
+		scanf("%d",&input);
+		switch(input)
+		{
+		case 1:
+			a();
+			break;
+		case 2:
+			b();
+			break;
+		case 3:
+			c();
+			break;
+		case 4:
+			printf("退出程序\n");
+			break;
+		}
+	}while(input);
+	return 0;
+}
